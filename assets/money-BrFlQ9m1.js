@@ -1,0 +1,1 @@
+function e(e,{sign:t=!1,symbol:n=!0}={}){let r=Math.abs(e)/100,i=Math.round(r*100)%100!=0,a=r.toLocaleString(`zh-CN`,{minimumFractionDigits:i?2:0,maximumFractionDigits:2});return`${e<0?`-`:t&&e>0?`+`:``}${n?`¥`:``}${a}`}export{e as t};
